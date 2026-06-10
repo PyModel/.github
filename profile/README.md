@@ -40,11 +40,10 @@ Most AI coding assistants jump straight to generating code. We think that's back
 
 These repositories are part of the Pythoughts platform — our flagship agent and the tooling that ships it everywhere.
 
-| Repository | Role | Description |
+| *Repository* | *Role* | *Description* |
 | --- | --- | --- |
-| [**pythinker-code**](https://github.com/Pythoughts-labs/pythinker-code) | ⚡ Flagship | The review-first AI engineering agent for the terminal — reviewer, security scanner, debugger, and coder in one shell-native loop. |
-| [**homebrew-pythinker**](https://github.com/Pythoughts-labs/homebrew-pythinker) | 🍺 Distribution | Official Homebrew tap for macOS and Linux installs. |
-| [**scoop-pythinker**](https://github.com/Pythoughts-labs/scoop-pythinker) | 🪟 Distribution | Official Scoop bucket for Windows installs. |
+| [pythinker&#8209;code](https://github.com/Pythoughts-labs/pythinker-code) | ⚡ Flagship | The review-first AI engineering agent for the terminal — reviewer, security scanner, debugger, and coder in one shell-native loop. |
+| [Designer&#8209;Skill](https://github.com/Pythoughts-labs/Designer-Skill) | 🎨 Skill | MCP server that gives coding agents a production-grade design vocabulary — typography, aesthetics, motion, performance, anti-slop, and refactoring. |
 
 ## 🚀 Get started
 
