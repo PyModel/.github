@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".github/profile/banner.svg" alt="Pythoughts — AI Solutions for Developers Who Live in the Terminal" width="100%" />
+<img src="banner.svg" alt="Pythoughts — AI Solutions for Developers Who Live in the Terminal" width="100%" />
 
 ### 🧠 AI Solutions for Developers Who Live in the Terminal
 
