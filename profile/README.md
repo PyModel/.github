@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Pythoughts-labs/.github/main/profile/banner.svg" alt="Pythoughts — AI Solutions for Developers Who Live in the Terminal" width="100%" />
+<img src=".github/profile/banner.svg" alt="Pythoughts — AI Solutions for Developers Who Live in the Terminal" width="100%" />
 
 ### 🧠 AI Solutions for Developers Who Live in the Terminal
 
@@ -29,21 +29,21 @@ Most AI coding assistants jump straight to generating code. We think that's back
 
 ## 🎯 What we stand for
 
-| | |
-| --- | --- |
-| 🔍 **Review-first** | Review, secure, and diagnose come *before* code generation — never after. |
-| 🖥️ **Terminal-native** | Plan, edit, run, and verify without leaving your shell. Visible, scriptable, auditable. |
-| 🧩 **Open & hackable** | Subagents, skills, hooks, and plugins are first-class. Bring your own model and tools. |
-| 🔐 **Privacy-respecting** | Prompts go directly to your provider. Telemetry is anonymous and fully optional. |
+|                           |                                                                                         |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| 🔍 **Review-first**       | Review, secure, and diagnose come _before_ code generation — never after.               |
+| 🖥️ **Terminal-native**    | Plan, edit, run, and verify without leaving your shell. Visible, scriptable, auditable. |
+| 🧩 **Open & hackable**    | Subagents, skills, hooks, and plugins are first-class. Bring your own model and tools.  |
+| 🔐 **Privacy-respecting** | Prompts go directly to your provider. Telemetry is anonymous and fully optional.        |
 
 ## 📦 Our work
 
 These repositories are part of the Pythoughts platform — our flagship agent and the tooling that ships it everywhere.
 
-| *Repository* | *Role* | *Description* |
-| --- | --- | --- |
-| [pythinker&#8209;code](https://github.com/Pythoughts-labs/pythinker-code) | ⚡ Flagship | The review-first AI engineering agent for the terminal — reviewer, security scanner, debugger, and coder in one shell-native loop. |
-| [Designer&#8209;Skill](https://github.com/Pythoughts-labs/Designer-Skill) | 🎨 Skill | MCP server that gives coding agents a production-grade design vocabulary — typography, aesthetics, motion, performance, anti-slop, and refactoring. |
+| _Repository_                                                              | _Role_      | _Description_                                                                                                                                       |
+| ------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [pythinker&#8209;code](https://github.com/Pythoughts-labs/pythinker-code) | ⚡ Flagship | The review-first AI engineering agent for the terminal — reviewer, security scanner, debugger, and coder in one shell-native loop.                  |
+| [Designer&#8209;Skill](https://github.com/Pythoughts-labs/Designer-Skill) | 🎨 Skill    | MCP server that gives coding agents a production-grade design vocabulary — typography, aesthetics, motion, performance, anti-slop, and refactoring. |
 
 ## 🚀 Get started
 
@@ -88,6 +88,6 @@ Contributions are warmly welcome — bug reports, pull requests, plugins, skills
 
 📫 [info@pythoughts.com](mailto:info@pythoughts.com) · 🌐 [pythoughts.com](https://pythoughts.com)
 
-*Built with care for engineers who live in the terminal.*
+_Built with care for engineers who live in the terminal._
 
 </div>
