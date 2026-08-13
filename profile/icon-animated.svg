@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">PyModel animated icon</title>
+  <desc id="desc">The PyModel geodesic mark assembles facet by facet, then a prompt types pymodel with a blinking caret</desc>
+
+  <style>
+    :root {
+      --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .mark polygon { animation: fade 450ms var(--ease-expo) both; }
+    .mark polygon:nth-of-type(1)  { animation-delay: 80ms; }
+    .mark polygon:nth-of-type(2)  { animation-delay: 135ms; }
+    .mark polygon:nth-of-type(3)  { animation-delay: 190ms; }
+    .mark polygon:nth-of-type(4)  { animation-delay: 245ms; }
+    .mark polygon:nth-of-type(5)  { animation-delay: 300ms; }
+    .mark polygon:nth-of-type(6)  { animation-delay: 355ms; }
+    .mark polygon:nth-of-type(7)  { animation-delay: 410ms; }
+    .mark polygon:nth-of-type(8)  { animation-delay: 465ms; }
+    .mark polygon:nth-of-type(9)  { animation-delay: 520ms; }
+    .mark polygon:nth-of-type(10) { animation-delay: 575ms; }
+    .mark polygon:nth-of-type(11) { animation-delay: 630ms; }
+    .mark polygon:nth-of-type(12) { animation-delay: 685ms; }
+    .mark polygon:nth-of-type(13) { animation-delay: 740ms; }
+    .mark polygon:nth-of-type(14) { animation-delay: 795ms; }
+    .mark polygon:nth-of-type(15) { animation-delay: 850ms; }
+    .rimline { animation: fade 600ms var(--ease-expo) 950ms both; }
+    .prompt { animation: fade 400ms var(--ease-expo) 1100ms both; }
+    .type-cover {
+      transform-box: fill-box;
+      transform-origin: right center;
+      transform: scaleX(0);
+      animation: type 900ms steps(7, end) 1300ms both;
+    }
+    .caret { animation: blink 1100ms steps(2, jump-none) 2400ms infinite; }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes type {
+      from { transform: scaleX(1); }
+      to   { transform: scaleX(0); }
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 0.9; }
+      50%, 100% { opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101218"/>
+      <stop offset="1" stop-color="#0b0c10"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#27d5c9"/>
+      <stop offset="0.5" stop-color="#2e8fe8"/>
+      <stop offset="1" stop-color="#7b63e6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#2e8fe8" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#2e8fe8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="320" height="320" fill="url(#bg)"/>
+  <rect width="320" height="320" fill="url(#glow)"/>
+
+  <g class="mark" transform="translate(160,138) scale(1.15)">
+    <polygon class="rimline" points="-44.7,-68.75 44.7,-68.75 72.3,16.25 0,68.75 -72.3,16.25" fill="none" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round" filter="url(#soft)" opacity="0.7"/>
+    <g stroke="#0b0c10" stroke-width="2" stroke-linejoin="round">
+      <polygon points="0,-7.25 0,-45.25 -36.1,-18.95" fill="#4addd2"/>
+      <polygon points="0,-7.25 -36.1,-18.95 -22.3,23.45" fill="#2e8fe8"/>
+      <polygon points="0,-7.25 -22.3,23.45 22.3,23.45" fill="#4a4fb5"/>
+      <polygon points="0,-7.25 22.3,23.45 36.1,-18.95" fill="#7b63e6"/>
+      <polygon points="0,-7.25 36.1,-18.95 0,-45.25" fill="#6fb4f2"/>
+      <polygon points="0,-45.25 -44.7,-68.75 -36.1,-18.95" fill="#27d5c9"/>
+      <polygon points="-36.1,-18.95 -72.3,16.25 -22.3,23.45" fill="#2578c9"/>
+      <polygon points="-22.3,23.45 0,68.75 22.3,23.45" fill="#3b3f9e"/>
+      <polygon points="22.3,23.45 72.3,16.25 36.1,-18.95" fill="#8f7aec"/>
+      <polygon points="36.1,-18.95 44.7,-68.75 0,-45.25" fill="#56a8f0"/>
+      <polygon points="-44.7,-68.75 -36.1,-18.95 -72.3,16.25" fill="#1fb8ad"/>
+      <polygon points="-72.3,16.25 -22.3,23.45 0,68.75" fill="#343887"/>
+      <polygon points="0,68.75 22.3,23.45 72.3,16.25" fill="#6a52d8"/>
+      <polygon points="72.3,16.25 36.1,-18.95 44.7,-68.75" fill="#9784f0"/>
+      <polygon points="44.7,-68.75 0,-45.25 -44.7,-68.75" fill="#2fc2db"/>
+    </g>
+  </g>
+
+  <!-- prompt line: types "pymodel", caret blinks -->
+  <g class="prompt">
+    <path d="M 96 254 L 105 262 L 96 270" fill="none" stroke="#27d5c9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="118" y="270" font-family="'SF Mono',Menlo,Consolas,'Cascadia Code',monospace" font-size="22" fill="#dde7f5">pymodel</text>
+    <rect class="type-cover" x="118" y="250" width="96" height="26" fill="#0b0c10"/>
+    <rect class="caret" x="222" y="250" width="12" height="24" rx="2" fill="#2e8fe8" opacity="0.9"/>
+  </g>
+</svg>
