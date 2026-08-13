@@ -7,7 +7,7 @@
       <stop offset="0" stop-color="#101218"/>
       <stop offset="1" stop-color="#0b0c10"/>
     </linearGradient>
-    <linearGradient id="rim" x1="86" y1="92" x2="232" y2="240" gradientUnits="userSpaceOnUse">
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#27d5c9"/>
       <stop offset="0.5" stop-color="#2e8fe8"/>
       <stop offset="1" stop-color="#7b63e6"/>
@@ -24,27 +24,29 @@
   <rect width="320" height="320" fill="url(#bg)"/>
   <rect width="320" height="320" fill="url(#glow)"/>
 
-  <g transform="translate(160,160) scale(1.55) translate(-158,-167.25)">
-    <polygon points="113.3,98.5 202.7,98.5 230.3,183.5 158,236 85.7,183.5" fill="none" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round" filter="url(#soft)" opacity="0.7"/>
-    <g stroke="#0b0c10" stroke-width="2" stroke-linejoin="round">
-      <polygon points="158,160 158,122 121.9,148.3" fill="#4addd2"/>
-      <polygon points="158,160 121.9,148.3 135.7,190.7" fill="#2e8fe8"/>
-      <polygon points="158,160 135.7,190.7 180.3,190.7" fill="#4a4fb5"/>
-      <polygon points="158,160 180.3,190.7 194.1,148.3" fill="#7b63e6"/>
-      <polygon points="158,160 194.1,148.3 158,122" fill="#6fb4f2"/>
-      <polygon points="158,122 113.3,98.5 121.9,148.3" fill="#27d5c9"/>
-      <polygon points="121.9,148.3 85.7,183.5 135.7,190.7" fill="#2578c9"/>
-      <polygon points="135.7,190.7 158,236 180.3,190.7" fill="#3b3f9e"/>
-      <polygon points="180.3,190.7 230.3,183.5 194.1,148.3" fill="#8f7aec"/>
-      <polygon points="194.1,148.3 202.7,98.5 158,122" fill="#56a8f0"/>
-      <polygon points="113.3,98.5 121.9,148.3 85.7,183.5" fill="#1fb8ad"/>
-      <polygon points="85.7,183.5 135.7,190.7 158,236" fill="#343887"/>
-      <polygon points="158,236 180.3,190.7 230.3,183.5" fill="#6a52d8"/>
-      <polygon points="230.3,183.5 194.1,148.3 202.7,98.5" fill="#9784f0"/>
-      <polygon points="202.7,98.5 158,122 113.3,98.5" fill="#2fc2db"/>
+  <g transform="translate(160,160) scale(1.55)">
+    <polygon points="0,-70 41.1,-56.6 66.6,-21.6 66.6,21.6 41.1,56.6 0,70 -41.1,56.6 -66.6,21.6 -66.6,-21.6 -41.1,-56.6" fill="none" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round" filter="url(#soft)" opacity="0.7"/>
+    <g stroke="#0b0c10" stroke-width="3" stroke-linejoin="round">
+      <polygon points="-4,2 0,-38 -36.1,-11.7" fill="#46b8e0"/>
+      <polygon points="-4,2 -36.1,-11.7 -22.3,30.7" fill="#7d8bf0"/>
+      <polygon points="-4,2 -22.3,30.7 22.3,30.7" fill="#4a4fb5"/>
+      <polygon points="-4,2 22.3,30.7 36.1,-11.7" fill="#7b63e6"/>
+      <polygon points="-4,2 36.1,-11.7 0,-38" fill="#64b1f0"/>
+      <polygon points="0,-38 -36.1,-11.7 -41.1,-56.6" fill="#5a9fe8"/>
+      <polygon points="-36.1,-11.7 -22.3,30.7 -66.6,21.6" fill="#6d6fd6"/>
+      <polygon points="-22.3,30.7 22.3,30.7 0,70" fill="#3f8fd9"/>
+      <polygon points="22.3,30.7 36.1,-11.7 66.6,21.6" fill="#8f7aec"/>
+      <polygon points="36.1,-11.7 0,-38 41.1,-56.6" fill="#45d3c9"/>
+      <polygon points="0,-38 41.1,-56.6 0,-70" fill="#52dfc0"/>
+      <polygon points="0,-38 0,-70 -41.1,-56.6" fill="#6f7fe0"/>
+      <polygon points="-36.1,-11.7 -41.1,-56.6 -66.6,-21.6" fill="#6076d8"/>
+      <polygon points="-36.1,-11.7 -66.6,-21.6 -66.6,21.6" fill="#5b74d6"/>
+      <polygon points="-22.3,30.7 -66.6,21.6 -41.1,56.6" fill="#3ecfbf"/>
+      <polygon points="-22.3,30.7 -41.1,56.6 0,70" fill="#4b57b0"/>
+      <polygon points="22.3,30.7 0,70 41.1,56.6" fill="#4a90d9"/>
+      <polygon points="22.3,30.7 41.1,56.6 66.6,21.6" fill="#6a52d8"/>
+      <polygon points="36.1,-11.7 66.6,21.6 66.6,-21.6" fill="#58c4d4"/>
+      <polygon points="36.1,-11.7 66.6,-21.6 41.1,-56.6" fill="#55c9e6"/>
     </g>
-    <circle cx="203" cy="97" r="1.5" fill="#eaf2ff" opacity="0.75"/>
-    <circle cx="159" cy="120.5" r="1.2" fill="#eaf2ff" opacity="0.55"/>
-    <circle cx="230" cy="182" r="1.2" fill="#eaf2ff" opacity="0.5"/>
   </g>
 </svg>
