@@ -28,11 +28,6 @@
     .mark polygon:nth-of-type(13) { animation-delay: 740ms; }
     .mark polygon:nth-of-type(14) { animation-delay: 795ms; }
     .mark polygon:nth-of-type(15) { animation-delay: 850ms; }
-    .mark polygon:nth-of-type(16) { animation-delay: 905ms; }
-    .mark polygon:nth-of-type(17) { animation-delay: 960ms; }
-    .mark polygon:nth-of-type(18) { animation-delay: 1015ms; }
-    .mark polygon:nth-of-type(19) { animation-delay: 1070ms; }
-    .mark polygon:nth-of-type(20) { animation-delay: 1125ms; }
     .flare { animation: fade 900ms var(--ease-expo) 500ms both; }
     .term { animation: fade 600ms var(--ease-expo) 300ms both; }
     .sweep { animation: sweep 1500ms var(--ease-expo) 400ms both; }
@@ -152,30 +147,25 @@
     <rect x="110" y="152.4" width="110" height="1.2" fill="url(#flareGrad)" opacity="0.8"/>
   </g>
 
-  <!-- geodesic mark: 20-facet icosahedron projection, neon rim -->
+  <!-- geodesic mark: 15-facet pentagon-hull projection, neon rim -->
   <g class="mark" transform="translate(158,153)">
-    <polygon points="0,-70 41.1,-56.6 66.6,-21.6 66.6,21.6 41.1,56.6 0,70 -41.1,56.6 -66.6,21.6 -66.6,-21.6 -41.1,-56.6" fill="none" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round" filter="url(#soft)" opacity="0.7"/>
-    <g stroke="#0b0c10" stroke-width="3" stroke-linejoin="round">
-      <polygon points="-4,2 0,-38 -36.1,-11.7" fill="#46b8e0"/>
-      <polygon points="-4,2 -36.1,-11.7 -22.3,30.7" fill="#7d8bf0"/>
-      <polygon points="-4,2 -22.3,30.7 22.3,30.7" fill="#4a4fb5"/>
-      <polygon points="-4,2 22.3,30.7 36.1,-11.7" fill="#7b63e6"/>
-      <polygon points="-4,2 36.1,-11.7 0,-38" fill="#64b1f0"/>
-      <polygon points="0,-38 -36.1,-11.7 -41.1,-56.6" fill="#5a9fe8"/>
-      <polygon points="-36.1,-11.7 -22.3,30.7 -66.6,21.6" fill="#6d6fd6"/>
-      <polygon points="-22.3,30.7 22.3,30.7 0,70" fill="#3f8fd9"/>
-      <polygon points="22.3,30.7 36.1,-11.7 66.6,21.6" fill="#8f7aec"/>
-      <polygon points="36.1,-11.7 0,-38 41.1,-56.6" fill="#45d3c9"/>
-      <polygon points="0,-38 41.1,-56.6 0,-70" fill="#52dfc0"/>
-      <polygon points="0,-38 0,-70 -41.1,-56.6" fill="#6f7fe0"/>
-      <polygon points="-36.1,-11.7 -41.1,-56.6 -66.6,-21.6" fill="#6076d8"/>
-      <polygon points="-36.1,-11.7 -66.6,-21.6 -66.6,21.6" fill="#5b74d6"/>
-      <polygon points="-22.3,30.7 -66.6,21.6 -41.1,56.6" fill="#3ecfbf"/>
-      <polygon points="-22.3,30.7 -41.1,56.6 0,70" fill="#4b57b0"/>
-      <polygon points="22.3,30.7 0,70 41.1,56.6" fill="#4a90d9"/>
-      <polygon points="22.3,30.7 41.1,56.6 66.6,21.6" fill="#6a52d8"/>
-      <polygon points="36.1,-11.7 66.6,21.6 66.6,-21.6" fill="#58c4d4"/>
-      <polygon points="36.1,-11.7 66.6,-21.6 41.1,-56.6" fill="#55c9e6"/>
+    <polygon points="-44.7,-68.75 44.7,-68.75 72.3,16.25 0,68.75 -72.3,16.25" fill="none" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round" filter="url(#soft)" opacity="0.7"/>
+    <g stroke="#0b0c10" stroke-width="2" stroke-linejoin="round">
+      <polygon points="0,-7.25 0,-45.25 -36.1,-18.95" fill="#4addd2"/>
+      <polygon points="0,-7.25 -36.1,-18.95 -22.3,23.45" fill="#2e8fe8"/>
+      <polygon points="0,-7.25 -22.3,23.45 22.3,23.45" fill="#4a4fb5"/>
+      <polygon points="0,-7.25 22.3,23.45 36.1,-18.95" fill="#7b63e6"/>
+      <polygon points="0,-7.25 36.1,-18.95 0,-45.25" fill="#6fb4f2"/>
+      <polygon points="0,-45.25 -44.7,-68.75 -36.1,-18.95" fill="#27d5c9"/>
+      <polygon points="-36.1,-18.95 -72.3,16.25 -22.3,23.45" fill="#2578c9"/>
+      <polygon points="-22.3,23.45 0,68.75 22.3,23.45" fill="#3b3f9e"/>
+      <polygon points="22.3,23.45 72.3,16.25 36.1,-18.95" fill="#8f7aec"/>
+      <polygon points="36.1,-18.95 44.7,-68.75 0,-45.25" fill="#56a8f0"/>
+      <polygon points="-44.7,-68.75 -36.1,-18.95 -72.3,16.25" fill="#1fb8ad"/>
+      <polygon points="-72.3,16.25 -22.3,23.45 0,68.75" fill="#343887"/>
+      <polygon points="0,68.75 22.3,23.45 72.3,16.25" fill="#6a52d8"/>
+      <polygon points="72.3,16.25 36.1,-18.95 44.7,-68.75" fill="#9784f0"/>
+      <polygon points="44.7,-68.75 0,-45.25 -44.7,-68.75" fill="#2fc2db"/>
     </g>
   </g>
 
