@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">PyModel</title>
-  <desc id="desc">PyModel, review-first AI engineering by Pythoughts</desc>
+  <desc id="desc">PyModel, AI, LLM, and machine learning solutions by Pythoughts</desc>
 
   <style>
     :root {
@@ -28,6 +28,7 @@
     .mark polygon:nth-of-type(13) { animation-delay: 740ms; }
     .mark polygon:nth-of-type(14) { animation-delay: 795ms; }
     .mark polygon:nth-of-type(15) { animation-delay: 850ms; }
+    .flare { animation: fade 900ms var(--ease-expo) 500ms both; }
     .term { animation: fade 600ms var(--ease-expo) 300ms both; }
     .sweep { animation: sweep 1500ms var(--ease-expo) 400ms both; }
     .type-cover {
@@ -75,88 +76,131 @@
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0d1a27"/>
-      <stop offset="1" stop-color="#071019"/>
+      <stop offset="0" stop-color="#101218"/>
+      <stop offset="1" stop-color="#0b0c10"/>
     </linearGradient>
 
     <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7cb7ff"/>
-      <stop offset="0.5" stop-color="#6ba8ff"/>
-      <stop offset="1" stop-color="#a891ff"/>
+      <stop offset="0" stop-color="#2e8fe8"/>
+      <stop offset="1" stop-color="#7b63e6"/>
     </linearGradient>
 
     <linearGradient id="hairline" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#66e2d0" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#6ba8ff" stop-opacity="0.6"/>
-      <stop offset="1" stop-color="#a891ff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#27d5c9" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#2e8fe8" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#7b63e6" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="rim" x1="86" y1="92" x2="232" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#27d5c9"/>
+      <stop offset="0.5" stop-color="#2e8fe8"/>
+      <stop offset="1" stop-color="#7b63e6"/>
+    </linearGradient>
+
+    <linearGradient id="flareGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#27d5c9" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#27d5c9" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#eaf2ff" stop-opacity="0.8"/>
+      <stop offset="0.65" stop-color="#7b63e6" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#7b63e6" stop-opacity="0"/>
     </linearGradient>
 
     <radialGradient id="glow" cx="0.2" cy="0.5" r="0.55">
-      <stop offset="0" stop-color="#6ba8ff" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#6ba8ff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2e8fe8" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#2e8fe8" stop-opacity="0"/>
     </radialGradient>
 
     <clipPath id="panelClip">
       <rect x="0.5" y="0.5" width="1199" height="319" rx="18"/>
     </clipPath>
+
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+
+    <filter id="flareBlur" x="-20%" y="-400%" width="140%" height="900%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05" intercept="0"/></feComponentTransfer>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
   </defs>
 
-  <!-- panel -->
-  <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="url(#bg)" stroke="#2b3f54"/>
+  <!-- matte panel -->
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="url(#bg)" stroke="#262a38"/>
   <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="url(#glow)"/>
+  <!-- fine digital grain -->
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="#eaf2ff" filter="url(#grain)"/>
 
   <!-- top hairline, one entrance sweep -->
   <g clip-path="url(#panelClip)">
     <rect class="sweep" x="120" y="0.5" width="960" height="1.5" fill="url(#hairline)"/>
   </g>
 
-  <!-- geodesic mark: 15-facet icosahedron projection -->
-  <g class="mark" transform="translate(0,-7)" stroke="#071019" stroke-width="2" stroke-linejoin="round">
-    <polygon points="158,160 158,122 121.9,148.3" fill="#6fe0d4"/>
-    <polygon points="158,160 121.9,148.3 135.7,190.7" fill="#62b7e6"/>
-    <polygon points="158,160 135.7,190.7 180.3,190.7" fill="#7d8df0"/>
-    <polygon points="158,160 180.3,190.7 194.1,148.3" fill="#a891ff"/>
-    <polygon points="158,160 194.1,148.3 158,122" fill="#7cb7ff"/>
-    <polygon points="158,122 113.3,98.5 121.9,148.3" fill="#55d8c8"/>
-    <polygon points="121.9,148.3 85.7,183.5 135.7,190.7" fill="#5794dc"/>
-    <polygon points="135.7,190.7 158,236 180.3,190.7" fill="#6f7ae8"/>
-    <polygon points="180.3,190.7 230.3,183.5 194.1,148.3" fill="#9a83f5"/>
-    <polygon points="194.1,148.3 202.7,98.5 158,122" fill="#8ac2ff"/>
-    <polygon points="113.3,98.5 121.9,148.3 85.7,183.5" fill="#49b9d4"/>
-    <polygon points="85.7,183.5 135.7,190.7 158,236" fill="#4f7fd0"/>
-    <polygon points="158,236 180.3,190.7 230.3,183.5" fill="#8a76ea"/>
-    <polygon points="230.3,183.5 194.1,148.3 202.7,98.5" fill="#a98fff"/>
-    <polygon points="202.7,98.5 158,122 113.3,98.5" fill="#6fd0e8"/>
+  <!-- anamorphic flare behind the mark -->
+  <g class="flare" clip-path="url(#panelClip)">
+    <rect x="20" y="151.75" width="460" height="2.5" fill="url(#flareGrad)" filter="url(#flareBlur)" opacity="0.45"/>
+    <rect x="110" y="152.4" width="110" height="1.2" fill="url(#flareGrad)" opacity="0.8"/>
+  </g>
+
+  <!-- geodesic mark: 15-facet icosahedron projection, neon rim -->
+  <g class="mark" transform="translate(0,-7)">
+    <polygon points="113.3,98.5 202.7,98.5 230.3,183.5 158,236 85.7,183.5" fill="none" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round" filter="url(#soft)" opacity="0.7"/>
+    <g stroke="#0b0c10" stroke-width="2" stroke-linejoin="round">
+      <polygon points="158,160 158,122 121.9,148.3" fill="#4addd2"/>
+      <polygon points="158,160 121.9,148.3 135.7,190.7" fill="#2e8fe8"/>
+      <polygon points="158,160 135.7,190.7 180.3,190.7" fill="#4a4fb5"/>
+      <polygon points="158,160 180.3,190.7 194.1,148.3" fill="#7b63e6"/>
+      <polygon points="158,160 194.1,148.3 158,122" fill="#6fb4f2"/>
+      <polygon points="158,122 113.3,98.5 121.9,148.3" fill="#27d5c9"/>
+      <polygon points="121.9,148.3 85.7,183.5 135.7,190.7" fill="#2578c9"/>
+      <polygon points="135.7,190.7 158,236 180.3,190.7" fill="#3b3f9e"/>
+      <polygon points="180.3,190.7 230.3,183.5 194.1,148.3" fill="#8f7aec"/>
+      <polygon points="194.1,148.3 202.7,98.5 158,122" fill="#56a8f0"/>
+      <polygon points="113.3,98.5 121.9,148.3 85.7,183.5" fill="#1fb8ad"/>
+      <polygon points="85.7,183.5 135.7,190.7 158,236" fill="#343887"/>
+      <polygon points="158,236 180.3,190.7 230.3,183.5" fill="#6a52d8"/>
+      <polygon points="230.3,183.5 194.1,148.3 202.7,98.5" fill="#9784f0"/>
+      <polygon points="202.7,98.5 158,122 113.3,98.5" fill="#2fc2db"/>
+    </g>
+    <!-- specular micro-highlights -->
+    <circle cx="203" cy="97" r="1.5" fill="#eaf2ff" opacity="0.75"/>
+    <circle cx="159" cy="120.5" r="1.2" fill="#eaf2ff" opacity="0.55"/>
+    <circle cx="230" cy="182" r="1.2" fill="#eaf2ff" opacity="0.5"/>
   </g>
 
   <!-- lockup text -->
-  <text class="rise d1" x="272" y="96" font-family="'SF Mono',Menlo,Consolas,'Cascadia Code',monospace" font-size="13" font-weight="700" letter-spacing="4" fill="#66e2d0">A PYTHOUGHTS COMPANY</text>
-  <text class="rise d2" x="268" y="188" font-family="'Avenir Next','Futura','Century Gothic','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="88" font-weight="800" letter-spacing="-2" fill="url(#word)">PyModel</text>
-  <text class="rise d3" x="272" y="236" font-family="'Avenir Next','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="20" font-weight="500" fill="#b5c3d0">Review-first AI engineering for the terminal</text>
+  <text class="rise d1" x="272" y="96" font-family="'SF Mono',Menlo,Consolas,'Cascadia Code',monospace" font-size="13" font-weight="700" letter-spacing="4" fill="#27d5c9">A PYTHOUGHTS COMPANY</text>
+  <text class="rise d2" x="268" y="188" font-family="'Poppins','Avenir Next','Futura','Century Gothic','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="88" font-weight="800" letter-spacing="-2" fill="url(#word)">PyModel</text>
+  <text class="rise d3" x="272" y="236" font-family="'Poppins','Avenir Next','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="20" font-weight="500" fill="#b8c4da">AI, LLM, and machine learning solutions</text>
 
   <!-- right: terminal motif -->
   <g class="term">
-    <rect x="768" y="62" width="348" height="196" rx="12" fill="#060f18" stroke="#2b3f54"/>
-    <line x1="768.5" y1="96" x2="1115.5" y2="96" stroke="#2b3f54"/>
-    <circle cx="792" cy="79" r="4.5" fill="#35455a"/>
-    <circle cx="811" cy="79" r="4.5" fill="#35455a"/>
-    <circle cx="830" cy="79" r="4.5" fill="#35455a"/>
+    <rect x="768" y="62" width="348" height="196" rx="12" fill="#0e1016" stroke="#262a38"/>
+    <line x1="768.5" y1="96" x2="1115.5" y2="96" stroke="#262a38"/>
+    <circle cx="792" cy="79" r="4.5" fill="#333848"/>
+    <circle cx="811" cy="79" r="4.5" fill="#333848"/>
+    <circle cx="830" cy="79" r="4.5" fill="#333848"/>
 
     <!-- prompt line with typing reveal -->
-    <path d="M 794 118 L 803 126 L 794 134" fill="none" stroke="#66e2d0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="814" y="131" font-family="'SF Mono',Menlo,Consolas,'Cascadia Code',monospace" font-size="16" fill="#dfeaf3">pythinker review</text>
-    <rect class="type-cover" x="814" y="114" width="160" height="22" fill="#060f18"/>
+    <path d="M 794 118 L 803 126 L 794 134" fill="none" stroke="#27d5c9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="814" y="131" font-family="'SF Mono',Menlo,Consolas,'Cascadia Code',monospace" font-size="16" fill="#dde7f5">pythinker review</text>
+    <rect class="type-cover" x="814" y="114" width="160" height="22" fill="#0e1016"/>
 
     <!-- output lines -->
-    <rect class="out o1" x="794" y="152" width="236" height="8" rx="4" fill="#263a4d"/>
-    <rect class="out o2" x="794" y="172" width="176" height="8" rx="4" fill="#263a4d"/>
-    <rect class="out o3" x="794" y="192" width="204" height="8" rx="4" fill="#564d85"/>
-    <rect class="out o4" x="794" y="212" width="140" height="8" rx="4" fill="#263a4d"/>
+    <rect class="out o1" x="794" y="152" width="236" height="8" rx="4" fill="#2a2f40"/>
+    <rect class="out o2" x="794" y="172" width="176" height="8" rx="4" fill="#2a2f40"/>
+    <rect class="out o3" x="794" y="192" width="204" height="8" rx="4" fill="#4a4090"/>
+    <rect class="out o4" x="794" y="212" width="140" height="8" rx="4" fill="#2a2f40"/>
 
     <!-- second prompt + blinking caret -->
     <g class="prompt2">
-      <path d="M 794 230 L 803 238 L 794 246" fill="none" stroke="#66e2d0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <rect class="caret" x="814" y="228" width="11" height="19" rx="1.5" fill="#6ba8ff" opacity="0.9"/>
+      <path d="M 794 230 L 803 238 L 794 246" fill="none" stroke="#27d5c9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect class="caret" x="814" y="228" width="11" height="19" rx="1.5" fill="#2e8fe8" opacity="0.9"/>
     </g>
   </g>
 </svg>
