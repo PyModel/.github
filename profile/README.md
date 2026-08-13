@@ -6,14 +6,14 @@
 
 **Think first, then code.** PyModel is the engineering home of [Pythoughts](https://pythoughts.com): we design and ship AI engineering systems that read, audit, and reason about your code before they ever write a line.
 
-[![Website](https://img.shields.io/badge/Website-pythoughts.com-D4AF37?style=for-the-badge&labelColor=0A0A0C)](https://pythoughts.com)
-[![Contact](https://img.shields.io/badge/Contact-info%40pythoughts.com-8A8A93?style=for-the-badge&labelColor=0A0A0C)](mailto:info@pythoughts.com)
-[![Flagship](https://img.shields.io/badge/Flagship-Pythinker-E8C766?style=for-the-badge&labelColor=0A0A0C)](https://github.com/PyModel/pythinker-cli)
+[![Website](https://img.shields.io/badge/Website-pythoughts.com-6BA8FF?style=for-the-badge&labelColor=071019)](https://pythoughts.com)
+[![Contact](https://img.shields.io/badge/Contact-info%40pythoughts.com-66E2D0?style=for-the-badge&labelColor=071019)](mailto:info@pythoughts.com)
+[![Flagship](https://img.shields.io/badge/Flagship-Pythinker-A891FF?style=for-the-badge&labelColor=071019)](https://github.com/PyModel/pythinker-cli)
 
-![Python](https://img.shields.io/badge/Python-26262C?style=flat-square&logo=python&logoColor=D4AF37)
-![MCP](https://img.shields.io/badge/Model_Context_Protocol-26262C?style=flat-square&logo=modelcontextprotocol&logoColor=D4AF37)
-![ACP](https://img.shields.io/badge/Agent_Client_Protocol-26262C?style=flat-square&logo=zedindustries&logoColor=D4AF37)
-![License](https://img.shields.io/badge/License-Apache_2.0-26262C?style=flat-square&logo=apache&logoColor=D4AF37)
+![Python](https://img.shields.io/badge/Python-14273A?style=flat-square&logo=python&logoColor=7CB7FF)
+![MCP](https://img.shields.io/badge/Model_Context_Protocol-14273A?style=flat-square&logo=modelcontextprotocol&logoColor=7CB7FF)
+![ACP](https://img.shields.io/badge/Agent_Client_Protocol-14273A?style=flat-square&logo=zedindustries&logoColor=7CB7FF)
+![License](https://img.shields.io/badge/License-Apache_2.0-14273A?style=flat-square&logo=apache&logoColor=7CB7FF)
 
 </div>
 
