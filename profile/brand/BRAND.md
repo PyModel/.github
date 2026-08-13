@@ -4,7 +4,7 @@ Identity guidelines for PyModel, by Pythoughts. One idea carries the system: thi
 
 ## The mark
 
-A low-poly geodesic sphere in face-on projection: 20 facets, a decagonal silhouette with 10 hull vertices at 36 degree steps, an inner pentagon at 0.54 R, and a slightly offset center vertex. Teal crowns the top and violet anchors the lower right, with the largest violet facet just right of center.
+A low-poly geodesic gem: a pentagonal silhouette with a flat top edge and a bottom point, built from 15 facets in 2 rings around a center vertex at 72 degree rhythm. Teal holds the upper left, blues carry the middle, and violet anchors the right, with deep indigo at the base.
 
 - Clear space: keep a margin of half the mark's radius on all sides.
 - Minimum size: 16 px. Below that, facet strokes close up.
