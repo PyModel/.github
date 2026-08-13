@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="banner.svg" alt="PyModel, review-first AI engineering by Pythoughts" width="100%" />
+<img src="banner.svg" alt="PyModel, AI, LLM, and machine learning solutions by Pythoughts" width="100%" />
 
-### Review-first AI engineering for developers who live in the terminal
+### AI, LLM, and machine learning solutions, built review-first
 
-**Think first, then code.** PyModel is the engineering home of [Pythoughts](https://pythoughts.com): we design and ship AI engineering systems that read, audit, and reason about your code before they ever write a line.
+**Think first, then code.** PyModel is where [Pythoughts](https://pythoughts.com) builds AI, LLM, and machine learning systems in the open, connecting complex data structures to software that runs in production.
 
 [![Website](https://img.shields.io/badge/Website-pythoughts.com-6BA8FF?style=for-the-badge&labelColor=071019)](https://pythoughts.com)
 [![Contact](https://img.shields.io/badge/Contact-info%40pythoughts.com-66E2D0?style=for-the-badge&labelColor=071019)](mailto:info@pythoughts.com)
@@ -21,9 +21,17 @@
 
 ## Who we are
 
-**PyModel is where [Pythoughts](https://pythoughts.com), an AI solutions company, builds in the open.** We make production-grade AI engineering tools that fit the way developers actually work, guided by one opinionated idea: AI should understand your codebase before it changes it.
+**PyModel is a technology company specializing in AI, LLM, and machine learning solutions.** The work spans neural network development and the engineering that puts models into production. Every project answers to the same test: does it connect complex data structures to practical application, and does it hold up under real load.
 
-Most AI coding assistants jump straight to generating code. We think that is backwards. Our systems lead with code review, security scanning, and root-cause diagnosis, then make scoped edits once the analysis points at a fix. Every repository in this organization is a building block of that work: open source, hackable, and shipped to production.
+Most AI coding assistants generate code first and check it later. We build in the opposite order. Our systems start with code review, security scanning, and root-cause diagnosis, and they edit only after the analysis points at a specific fix. The repositories in this organization are the building blocks of that work. They are open source, and they run in production.
+
+## Who we work with
+
+| Audience | What we deliver |
+| --- | --- |
+| **Business owners** | AI integration for products and operations. We scope the use case, wire LLM capability into your existing systems, and report results you can measure. |
+| **Developers** | Terminal-native agents, skills, and orchestration tooling that fit into the workflows you already run. |
+| **Data scientists** | Tooling and infrastructure across the ML lifecycle, from data preparation through deployed and monitored models. |
 
 ## What we stand for
 
@@ -38,19 +46,19 @@ Most AI coding assistants jump straight to generating code. We think that is bac
 
 ### AI and ML backend SaaS
 
-We build the backend side of AI products: model training and fine-tuning pipelines, deployment and inference APIs, data management, and usage-based service layers. The architectural bar is constant across projects: horizontal scalability, security at every boundary, predictable latency, and honest cost efficiency.
+We design the backend side of AI products: training and fine-tuning pipelines, inference APIs, data management, and usage metering. Every design is judged on scale, security, latency, and cost, in that order of scrutiny, because a backend that fails any one of them fails the business it serves.
 
 ### AI engineering
 
-AI engineering is shipping AI systems with software-engineering rigor. We treat problem formulation, data preparation, model development, deployment, monitoring, and governance as one lifecycle, and we automate that lifecycle with agents and MLOps practice rather than heroics.
+A good model is a small part of a working AI system. We treat problem formulation, data preparation, evaluation, deployment, and monitoring as one lifecycle, and we automate the parts of it that machines do better than people.
 
 ### Machine learning
 
-Across supervised, unsupervised, and reinforcement learning, we care about the full path from raw data to evaluated model: preprocessing, feature engineering, model selection, training, validation, and testing, with honest benchmarks and attention to the ethics of what ships.
+We build models across supervised, unsupervised, and reinforcement learning, and we measure them without flattery: real benchmarks, held-out validation, and documented failure modes.
 
 ### Software engineering
 
-Everything above rests on classical engineering discipline: clear lifecycles, tested code, and methodology chosen to fit the work. CLI, web, or service, the same bar applies: simple, reviewable, production-grade.
+The AI work sits on ordinary engineering discipline. Tested code, small reviewable changes, and methodology chosen to fit the team. A model pipeline earns no exemption from the standards that apply to any other production system.
 
 ## Our public work
 
@@ -84,7 +92,7 @@ irm https://pythinker.com/install.ps1 | iex
 pip install pythinker-code
 ```
 
-Then confirm the install and launch the interactive session:
+Confirm the install, then launch the interactive session:
 
 ```bash
 pythinker --version
@@ -93,11 +101,11 @@ pythinker
 
 ## Built on open standards
 
-Our agents speak the **Agent Client Protocol (ACP)** for inline use in editors like Zed and JetBrains, and load **Model Context Protocol (MCP)** servers so your existing tools just work. Swap providers and models per session, hosted APIs or fully local models. No vendor lock-in.
+Our agents speak the Agent Client Protocol (ACP) for inline use in editors such as Zed and JetBrains, and they load Model Context Protocol (MCP) servers, so the tools you already use keep working. Providers and models swap per session, hosted or fully local, and nothing in the stack ties you to a single vendor.
 
 ## Contributing
 
-Bug reports, pull requests, plugins, skills, and docs are all welcome. Start with the `CONTRIBUTING.md` and `SECURITY.md` in each repository. If our tools help you, a star on the repos goes a long way.
+Bug reports, pull requests, plugins, skills, and docs are welcome. Each repository carries its own `CONTRIBUTING.md` and `SECURITY.md`, so start there. If our tools help you, star the repos; it helps other engineers find them.
 
 ---
 
@@ -105,6 +113,6 @@ Bug reports, pull requests, plugins, skills, and docs are all welcome. Start wit
 
 [info@pythoughts.com](mailto:info@pythoughts.com) · [pythoughts.com](https://pythoughts.com)
 
-_PyModel, by Pythoughts. Built with care for engineers who live in the terminal._
+_PyModel, by Pythoughts. Built for engineers who live in the terminal._
 
 </div>
