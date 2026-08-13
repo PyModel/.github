@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">PyModel icon</title>
+  <desc id="desc">Low-poly geodesic mark of PyModel in teal, blue, indigo, and violet on deep ink</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101218"/>
+      <stop offset="1" stop-color="#0b0c10"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="86" y1="92" x2="232" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#27d5c9"/>
+      <stop offset="0.5" stop-color="#2e8fe8"/>
+      <stop offset="1" stop-color="#7b63e6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2e8fe8" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#2e8fe8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="320" height="320" fill="url(#bg)"/>
+  <rect width="320" height="320" fill="url(#glow)"/>
+
+  <g transform="translate(160,160) scale(1.55) translate(-158,-167.25)">
+    <polygon points="113.3,98.5 202.7,98.5 230.3,183.5 158,236 85.7,183.5" fill="none" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round" filter="url(#soft)" opacity="0.7"/>
+    <g stroke="#0b0c10" stroke-width="2" stroke-linejoin="round">
+      <polygon points="158,160 158,122 121.9,148.3" fill="#4addd2"/>
+      <polygon points="158,160 121.9,148.3 135.7,190.7" fill="#2e8fe8"/>
+      <polygon points="158,160 135.7,190.7 180.3,190.7" fill="#4a4fb5"/>
+      <polygon points="158,160 180.3,190.7 194.1,148.3" fill="#7b63e6"/>
+      <polygon points="158,160 194.1,148.3 158,122" fill="#6fb4f2"/>
+      <polygon points="158,122 113.3,98.5 121.9,148.3" fill="#27d5c9"/>
+      <polygon points="121.9,148.3 85.7,183.5 135.7,190.7" fill="#2578c9"/>
+      <polygon points="135.7,190.7 158,236 180.3,190.7" fill="#3b3f9e"/>
+      <polygon points="180.3,190.7 230.3,183.5 194.1,148.3" fill="#8f7aec"/>
+      <polygon points="194.1,148.3 202.7,98.5 158,122" fill="#56a8f0"/>
+      <polygon points="113.3,98.5 121.9,148.3 85.7,183.5" fill="#1fb8ad"/>
+      <polygon points="85.7,183.5 135.7,190.7 158,236" fill="#343887"/>
+      <polygon points="158,236 180.3,190.7 230.3,183.5" fill="#6a52d8"/>
+      <polygon points="230.3,183.5 194.1,148.3 202.7,98.5" fill="#9784f0"/>
+      <polygon points="202.7,98.5 158,122 113.3,98.5" fill="#2fc2db"/>
+    </g>
+    <circle cx="203" cy="97" r="1.5" fill="#eaf2ff" opacity="0.75"/>
+    <circle cx="159" cy="120.5" r="1.2" fill="#eaf2ff" opacity="0.55"/>
+    <circle cx="230" cy="182" r="1.2" fill="#eaf2ff" opacity="0.5"/>
+  </g>
+</svg>
