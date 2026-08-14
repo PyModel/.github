@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="banner.svg?v=3" alt="PyModel, AI, LLM, and machine learning solutions by Pythoughts" width="100%" />
+<img src="banner.svg?v=4" alt="PyModel, AI, LLM, and machine learning solutions by Pythoughts" width="100%" />
 
 ### AI, LLM, and machine learning solutions, built review-first
 
