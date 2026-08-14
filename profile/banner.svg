@@ -161,9 +161,9 @@
   </g>
 
   <!-- lockup text -->
-  <text class="rise d1" x="272" y="96" font-family="'SF Mono',Menlo,Consolas,'Cascadia Code',monospace" font-size="13" font-weight="700" letter-spacing="4" fill="#27d5c9">A PYTHOUGHTS COMPANY</text>
-  <text class="rise d2" x="268" y="188" font-family="'Poppins','Avenir Next','Futura','Century Gothic','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="88" font-weight="800" letter-spacing="-2" fill="url(#word)">PyModel</text>
-  <text class="rise d3" x="272" y="236" font-family="'Poppins','Avenir Next','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="20" font-weight="500" fill="#b8c4da">AI, LLM, and machine learning solutions</text>
+  <text class="rise d1" x="272" y="96" font-family="'Inter','SF Pro Text','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#aab4c5">A PYTHOUGHTS COMPANY</text>
+  <text class="rise d2" x="268" y="188" font-family="'Inter','SF Pro Display','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="88" font-weight="800" letter-spacing="-2" fill="#d7dce5">PyModel</text>
+  <text class="rise d3" x="272" y="236" font-family="'Inter','SF Pro Text','Helvetica Neue','Segoe UI',system-ui,sans-serif" font-size="20" font-weight="500" fill="#aab4c5">AI, LLM, and machine learning solutions</text>
 
   <!-- right: terminal motif -->
   <g class="term">
