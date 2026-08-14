@@ -12,22 +12,18 @@
     .d1 { animation-delay: 80ms; }
     .d2 { animation-delay: 200ms; }
     .d3 { animation-delay: 320ms; }
-    .mark polygon { animation: fade 450ms var(--ease-expo) both; }
-    .mark polygon:nth-of-type(1)  { animation-delay: 80ms; }
-    .mark polygon:nth-of-type(2)  { animation-delay: 135ms; }
-    .mark polygon:nth-of-type(3)  { animation-delay: 190ms; }
-    .mark polygon:nth-of-type(4)  { animation-delay: 245ms; }
-    .mark polygon:nth-of-type(5)  { animation-delay: 300ms; }
-    .mark polygon:nth-of-type(6)  { animation-delay: 355ms; }
-    .mark polygon:nth-of-type(7)  { animation-delay: 410ms; }
-    .mark polygon:nth-of-type(8)  { animation-delay: 465ms; }
-    .mark polygon:nth-of-type(9)  { animation-delay: 520ms; }
-    .mark polygon:nth-of-type(10) { animation-delay: 575ms; }
-    .mark polygon:nth-of-type(11) { animation-delay: 630ms; }
-    .mark polygon:nth-of-type(12) { animation-delay: 685ms; }
-    .mark polygon:nth-of-type(13) { animation-delay: 740ms; }
-    .mark polygon:nth-of-type(14) { animation-delay: 795ms; }
-    .mark polygon:nth-of-type(15) { animation-delay: 850ms; }
+    .mark circle, .mark polygon { animation: fade 450ms var(--ease-expo) both; }
+    .mark circle { animation-delay: 80ms; }
+    .mark polygon:nth-of-type(1)  { animation-delay: 135ms; }
+    .mark polygon:nth-of-type(2)  { animation-delay: 190ms; }
+    .mark polygon:nth-of-type(3)  { animation-delay: 245ms; }
+    .mark polygon:nth-of-type(4)  { animation-delay: 300ms; }
+    .mark polygon:nth-of-type(5)  { animation-delay: 355ms; }
+    .mark polygon:nth-of-type(6)  { animation-delay: 410ms; }
+    .mark polygon:nth-of-type(7)  { animation-delay: 465ms; }
+    .mark polygon:nth-of-type(8)  { animation-delay: 520ms; }
+    .mark polygon:nth-of-type(9)  { animation-delay: 575ms; }
+    .mark polygon:nth-of-type(10) { animation-delay: 630ms; }
     .flare { animation: fade 900ms var(--ease-expo) 500ms both; }
     .term { animation: fade 600ms var(--ease-expo) 300ms both; }
     .sweep { animation: sweep 1500ms var(--ease-expo) 400ms both; }
@@ -147,25 +143,20 @@
     <rect x="110" y="152.4" width="110" height="1.2" fill="url(#flareGrad)" opacity="0.8"/>
   </g>
 
-  <!-- geodesic mark: 15-facet pentagon-hull projection, neon rim -->
-  <g class="mark" transform="translate(158,153)">
-    <polygon points="-44.7,-68.75 44.7,-68.75 72.3,16.25 0,68.75 -72.3,16.25" fill="none" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round" filter="url(#soft)" opacity="0.7"/>
+  <!-- geodesic mark: 10-facet geodesic sphere, neon rim (matches assets/icon.svg) -->
+  <g class="mark" transform="translate(158,153) scale(0.86)">
+    <circle r="80" fill="none" stroke="url(#rim)" stroke-width="3" filter="url(#soft)" opacity="0.7"/>
     <g stroke="#0b0c10" stroke-width="2" stroke-linejoin="round">
-      <polygon points="0,-7.25 0,-45.25 -36.1,-18.95" fill="#4addd2"/>
-      <polygon points="0,-7.25 -36.1,-18.95 -22.3,23.45" fill="#2e8fe8"/>
-      <polygon points="0,-7.25 -22.3,23.45 22.3,23.45" fill="#4a4fb5"/>
-      <polygon points="0,-7.25 22.3,23.45 36.1,-18.95" fill="#7b63e6"/>
-      <polygon points="0,-7.25 36.1,-18.95 0,-45.25" fill="#6fb4f2"/>
-      <polygon points="0,-45.25 -44.7,-68.75 -36.1,-18.95" fill="#27d5c9"/>
-      <polygon points="-36.1,-18.95 -72.3,16.25 -22.3,23.45" fill="#2578c9"/>
-      <polygon points="-22.3,23.45 0,68.75 22.3,23.45" fill="#3b3f9e"/>
-      <polygon points="22.3,23.45 72.3,16.25 36.1,-18.95" fill="#8f7aec"/>
-      <polygon points="36.1,-18.95 44.7,-68.75 0,-45.25" fill="#56a8f0"/>
-      <polygon points="-44.7,-68.75 -36.1,-18.95 -72.3,16.25" fill="#1fb8ad"/>
-      <polygon points="-72.3,16.25 -22.3,23.45 0,68.75" fill="#343887"/>
-      <polygon points="0,68.75 22.3,23.45 72.3,16.25" fill="#6a52d8"/>
-      <polygon points="72.3,16.25 36.1,-18.95 44.7,-68.75" fill="#9784f0"/>
-      <polygon points="44.7,-68.75 0,-45.25 -44.7,-68.75" fill="#2fc2db"/>
+      <polygon points="62.51,-37.26 42.56,-44.40 -6.20,-78.30" fill="#50a6e8"/>
+      <polygon points="-40.04,-38.57 -6.20,-78.30 -71.14,-27.83" fill="#48ebd7"/>
+      <polygon points="71.14,27.83 62.51,-37.26 42.56,-44.40" fill="#5a62c8"/>
+      <polygon points="-40.04,-38.57 -62.51,37.26 -71.14,-27.83" fill="#32dacc"/>
+      <polygon points="-40.04,-38.57 42.56,-44.40 -6.20,-78.30" fill="#3bd2ec"/>
+      <polygon points="7.76,27.02 6.20,78.30 71.14,27.83" fill="#6f55c9"/>
+      <polygon points="7.76,27.02 6.20,78.30 -62.51,37.26" fill="#3675c8"/>
+      <polygon points="7.76,27.02 71.14,27.83 42.56,-44.40" fill="#6363d0"/>
+      <polygon points="7.76,27.02 -40.04,-38.57 -62.51,37.26" fill="#49aee7"/>
+      <polygon points="7.76,27.02 -40.04,-38.57 42.56,-44.40" fill="#55abf8"/>
     </g>
   </g>
 
