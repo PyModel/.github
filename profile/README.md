@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="banner.svg?v=4" alt="PyModel, AI, LLM, and machine learning solutions by Pythoughts" width="100%" />
+<img src="banner.svg?v=4" alt="PyModel, AI, LLM, and machine learning solutions" width="100%" />
 
 ### AI, LLM, and machine learning solutions, built review-first
 
-**Think first, then code.** PyModel is where [Pythoughts](https://pythoughts.com) builds AI, LLM, and machine learning systems in the open, connecting complex data structures to software that runs in production.
+**Think first, then code.** [PyModel](https://pymodel.com) builds AI, LLM, and machine learning systems in the open, connecting complex data structures to software that runs in production.
 
-[![Website](https://img.shields.io/badge/Website-pythoughts.com-6BA8FF?style=for-the-badge&labelColor=071019)](https://pythoughts.com)
+[![Website](https://img.shields.io/badge/Website-pymodel.com-6BA8FF?style=for-the-badge&labelColor=071019)](https://pymodel.com)
 [![Contact](https://img.shields.io/badge/Contact-hello%40pymodel.com-66E2D0?style=for-the-badge&labelColor=071019)](mailto:hello@pymodel.com)
 [![Flagship](https://img.shields.io/badge/Flagship-Pythinker--Code-A891FF?style=for-the-badge&labelColor=071019)](https://github.com/PyModel/pythinker-code)
 
@@ -111,8 +111,8 @@ Bug reports, pull requests, plugins, skills, and docs are welcome. Each reposito
 
 <div align="center">
 
-[hello@pymodel.com](mailto:hello@pymodel.com) · [pythoughts.com](https://pythoughts.com)
+[hello@pymodel.com](mailto:hello@pymodel.com) · [pymodel.com](https://pymodel.com)
 
-_PyModel, by Pythoughts. Built for engineers who live in the terminal._
+_PyModel. Built for engineers who live in the terminal._
 
 </div>
