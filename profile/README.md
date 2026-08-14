@@ -7,8 +7,8 @@
 **Think first, then code.** PyModel is where [Pythoughts](https://pythoughts.com) builds AI, LLM, and machine learning systems in the open, connecting complex data structures to software that runs in production.
 
 [![Website](https://img.shields.io/badge/Website-pythoughts.com-6BA8FF?style=for-the-badge&labelColor=071019)](https://pythoughts.com)
-[![Contact](https://img.shields.io/badge/Contact-info%40pythoughts.com-66E2D0?style=for-the-badge&labelColor=071019)](mailto:info@pythoughts.com)
-[![Flagship](https://img.shields.io/badge/Flagship-Pythinker-A891FF?style=for-the-badge&labelColor=071019)](https://github.com/PyModel/pythinker-cli)
+[![Contact](https://img.shields.io/badge/Contact-hello%40pymodel.com-66E2D0?style=for-the-badge&labelColor=071019)](mailto:hello@pymodel.com)
+[![Flagship](https://img.shields.io/badge/Flagship-Pythinker--Code-A891FF?style=for-the-badge&labelColor=071019)](https://github.com/PyModel/pythinker-code)
 
 ![Python](https://img.shields.io/badge/Python-14273A?style=flat-square&logo=python&logoColor=7CB7FF)
 ![MCP](https://img.shields.io/badge/Model_Context_Protocol-14273A?style=flat-square&logo=modelcontextprotocol&logoColor=7CB7FF)
@@ -64,8 +64,8 @@ The AI work sits on ordinary engineering discipline. Tested code, small reviewab
 
 | Repository | Role | Description |
 | --- | --- | --- |
-| [pythinker&#8209;cli](https://github.com/PyModel/pythinker-cli) | Flagship | The review-first AI engineering agent: code reviewer, security scanner, root-cause debugger, and code generator in one shell-native loop. |
-| [pythinker&#8209;code](https://github.com/PyModel/pythinker-code) | Agent | Terminal coding agent that reads code, edits files, runs tools, and integrates with editors via ACP. |
+| [pythinker&#8209;code](https://github.com/PyModel/pythinker-code) | Flagship | Terminal coding agent that reads code, edits files, runs tools, and integrates with editors via ACP. |
+| [pythinker&#8209;cli](https://github.com/PyModel/pythinker-cli) | Agent | The review-first AI engineering agent: code reviewer, security scanner, root-cause debugger, and code generator in one shell-native loop. |
 | [claude&#8209;architect](https://github.com/PyModel/claude-architect) | Orchestration | Delegates coding to isolated CLI agents, freezes what they produce, verifies it independently, and merges only what a human approves. |
 | [maestro](https://github.com/PyModel/maestro) | Orchestration | Orchestrator and implementer loop for Claude Code: one model plans, debates, and reviews while another writes the code and proves it works. |
 | [designer&#8209;skill](https://github.com/PyModel/designer-skill) | Agent skill | Plug-and-play MCP that gives coding agents UI superpowers. One-line install, zero config. |
@@ -111,7 +111,7 @@ Bug reports, pull requests, plugins, skills, and docs are welcome. Each reposito
 
 <div align="center">
 
-[info@pythoughts.com](mailto:info@pythoughts.com) · [pythoughts.com](https://pythoughts.com)
+[hello@pymodel.com](mailto:hello@pymodel.com) · [pythoughts.com](https://pythoughts.com)
 
 _PyModel, by Pythoughts. Built for engineers who live in the terminal._
 
