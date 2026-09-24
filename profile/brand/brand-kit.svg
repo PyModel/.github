@@ -126,7 +126,7 @@
     <text x="24" y="34" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="10" letter-spacing="2" fill="#566078">04 &#183; ESSENCE</text>
     <text x="44" y="148" font-family="'Poppins','Avenir Next','Helvetica Neue',sans-serif" font-size="50" font-weight="700" letter-spacing="-1.5" fill="#eaf2ff">Think first,</text>
     <text x="44" y="210" font-family="'Poppins','Avenir Next','Helvetica Neue',sans-serif" font-size="50" font-weight="700" letter-spacing="-1.5" fill="url(#word)">then code.</text>
-    <text x="44" y="262" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="10" letter-spacing="2" fill="#566078">PYTHOUGHTS.COM</text>
+    <text x="44" y="262" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="10" letter-spacing="2" fill="#566078">PYMODEL.COM</text>
   </g>
 
   <!-- 05 color system -->
@@ -170,7 +170,7 @@
     <rect x="48" y="82" width="246" height="2" fill="url(#hairG)" opacity="0.8"/>
     <use xlink:href="#mk" transform="translate(80,138) scale(0.32)"/>
     <text x="58" y="212" font-family="'Poppins','Avenir Next','Helvetica Neue',sans-serif" font-size="18" font-weight="700" fill="#eaf2ff">PyModel</text>
-    <text x="58" y="228" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="8" letter-spacing="1.5" fill="#566078">PYTHOUGHTS.COM</text>
+    <text x="58" y="228" font-family="'SF Mono',Menlo,Consolas,monospace" font-size="8" letter-spacing="1.5" fill="#566078">PYMODEL.COM</text>
     <circle cx="394" cy="162" r="52" fill="#0e1016" stroke="url(#rimG)" stroke-width="2"/>
     <use xlink:href="#mk" transform="translate(394,160) scale(0.42)"/>
   </g>
