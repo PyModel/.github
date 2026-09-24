@@ -1,6 +1,6 @@
 # PyModel brand system
 
-Identity guidelines for PyModel, by Pythoughts. One idea carries the system: think first, then code. The visuals stay dark, precise, and quiet; the geodesic mark and the teal-to-violet spectrum do the talking.
+Identity guidelines for PyModel. One idea carries the system: think first, then code. The visuals stay dark, precise, and quiet; the geodesic mark and the teal-to-violet spectrum do the talking.
 
 ## The mark
 
