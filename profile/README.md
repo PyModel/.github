@@ -10,11 +10,9 @@ Open-source tools for coding agents, UI engineering, and verifiable AI workflows
 
 </div>
 
-## Featured: jev-judge-mcp
+## Featured
 
-[**jev-judge-mcp**](https://github.com/PyModel/jev-judge-mcp) adds eleven typed judgment tools to your coding agent, including `verify`, `gate`, `review`, and `rerank`. Each call sends evidence and a fixed set of answers to TypeSafe's Jev model, which usually returns probabilities in under a second. Policy turns them into `auto`, `review`, or `escalate`.
-
-![GitHub stars for jev-judge-mcp](https://img.shields.io/github/stars/PyModel/jev-judge-mcp?style=flat-square&label=stars&color=2E8FE8) ![PyPI version of jev-judge-mcp](https://img.shields.io/pypi/v/jev-judge-mcp?style=flat-square&label=pypi&color=2E8FE8)
+<a href="https://github.com/PyModel/jev-judge-mcp"><img src="jev-judge-mcp.svg" alt="jev-judge-mcp: typed judgment tools for MCP agents. Model judges, policy decides: auto, review, or escalate." width="100%" /></a>
 
 ```sh
 uvx --from 'jev-judge-mcp[typesafe]' jev-judge-mcp setup     # verify and store your TypeSafe key
