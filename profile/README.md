@@ -12,7 +12,7 @@ Open-source tools for coding agents, UI engineering, and verifiable AI workflows
 
 ## Featured
 
-<a href="https://github.com/PyModel/jev-judge-mcp"><img src="jev-judge-mcp.svg" alt="jev-judge-mcp: typed judgment tools for MCP agents. Model judges, policy decides: auto, review, or escalate." width="100%" /></a>
+<a href="https://github.com/PyModel/jev-judge-mcp"><img src="jev-card.svg" alt="jev-judge-mcp: typed judgment tools for MCP agents. Model judges, policy decides: auto, review, or escalate." width="100%" /></a>
 
 ```sh
 uvx --from 'jev-judge-mcp[typesafe]' jev-judge-mcp setup     # verify and store your TypeSafe key
