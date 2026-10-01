@@ -22,7 +22,7 @@ uvx --from 'jev-judge-mcp[typesafe]' jev-judge-mcp doctor    # check the configu
 
 Works with Claude Code, Claude Desktop, Codex, Cursor, OpenCode, Pi, omp, and Pythinker.
 
-<a href="https://github.com/PyModel/niblet-skill-mcp"><img src="niblet-skill-mcp.svg" alt="niblet-skill-mcp: real screen references and a design skill for coding agents that build UI. Contract, build, check." width="100%" /></a>
+<a href="https://github.com/PyModel/niblet-skill-mcp"><img src="niblet-skill-mcp.svg?v=2" alt="niblet-skill-mcp: real screen references and a design skill for coding agents that build UI. Contract, build, check." width="100%" /></a>
 
 ```sh
 npx skills add PyModel/niblet-skill-mcp --skill niblet -y   # the design skill, no token needed
