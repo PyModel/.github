@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="niblet-skill-mcp, with a screen-frame emblem: real screen references and a design skill for coding agents that build UI. Contract, build, check. References: find_ui_references. Materials: find_ui_materials. System: get_design_reference. Local: niblet_help, niblet_status.">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7b2e"/>
+      <stop offset="0.38" stop-color="#ffc94d"/>
+      <stop offset="0.72" stop-color="#b9e769"/>
+      <stop offset="1" stop-color="#4fd8c4"/>
+    </linearGradient>
+    <linearGradient id="brandDiag" gradientUnits="userSpaceOnUse" x1="104" y1="92" x2="280" y2="268">
+      <stop offset="0" stop-color="#ff7b2e"/>
+      <stop offset="0.45" stop-color="#ffc94d"/>
+      <stop offset="1" stop-color="#b9e769"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff7b2e" stop-opacity="0.85"/>
+      <stop offset="0.35" stop-color="#ffc94d" stop-opacity="0.35"/>
+      <stop offset="0.65" stop-color="#b9e769" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#4fd8c4" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7b2e"/>
+      <stop offset="0.33" stop-color="#ffc94d"/>
+      <stop offset="0.66" stop-color="#b9e769"/>
+      <stop offset="1" stop-color="#4fd8c4"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="170" cy="40" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff7b2e" stop-opacity="0.26"/>
+      <stop offset="0.5" stop-color="#ffc94d" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffc94d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="1180" cy="360" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4fd8c4" stop-opacity="0.2"/>
+      <stop offset="0.55" stop-color="#b9e769" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#b9e769" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="medal" cx="0.5" cy="0.38" r="0.62">
+      <stop offset="0" stop-color="#2a2016"/>
+      <stop offset="1" stop-color="#110f14"/>
+    </radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <clipPath id="card"><rect width="1280" height="360" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1280" height="360" fill="#0a0a0f"/>
+    <rect width="1280" height="360" fill="url(#dots)"/>
+    <rect width="1280" height="360" fill="url(#glowA)"/>
+    <rect width="1280" height="360" fill="url(#glowB)"/>
+    <rect x="0" y="0" width="1280" height="3" fill="url(#brand)"/>
+  </g>
+  <rect x="1" y="1" width="1278" height="358" rx="23" fill="none" stroke="url(#rim)" stroke-width="2"/>
+  <g>
+    <circle cx="192" cy="180" r="100" fill="#ffc94d" fill-opacity="0.22" filter="url(#soft)"/>
+    <circle cx="192" cy="180" r="92" fill="url(#medal)"/>
+    <circle cx="192" cy="180" r="92" fill="none" stroke="url(#brandDiag)" stroke-width="3"/>
+    <circle cx="192" cy="180" r="81" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.5" stroke-dasharray="2 6"/>
+    <rect x="132" y="134" width="120" height="92" rx="10" fill="none" stroke="url(#brandDiag)" stroke-width="4.5"/>
+    <path d="M132 154 H252" stroke="url(#brandDiag)" stroke-width="3"/>
+    <circle cx="145" cy="144" r="3" fill="#ff7b2e"/>
+    <circle cx="156" cy="144" r="3" fill="#ffc94d"/>
+    <circle cx="167" cy="144" r="3" fill="#b9e769"/>
+    <rect x="144" y="166" width="38" height="48" rx="5" fill="#ff7b2e" fill-opacity="0.22" stroke="#ff7b2e" stroke-width="2.5"/>
+    <rect x="192" y="166" width="48" height="20" rx="5" fill="#b9e769" fill-opacity="0.22" stroke="#b9e769" stroke-width="2.5"/>
+    <rect x="192" y="194" width="48" height="20" rx="5" fill="#4fd8c4" fill-opacity="0.22" stroke="#4fd8c4" stroke-width="2.5"/>
+  </g>
+  <text x="326" y="152" fill="url(#brand)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="60" font-weight="800" letter-spacing="-1.5" textLength="415" lengthAdjust="spacingAndGlyphs">niblet-skill-mcp</text>
+  <text x="328" y="194" fill="#e4e4e7" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="500">Real screens behind agent-built UI</text>
+  <text x="328" y="228" fill="#8b8b96" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="0.4">design skill <tspan fill="#52525b">·</tspan> MCP references</text>
+  <rect x="328" y="248" width="107" height="30" rx="15" fill="#ff7b2e" fill-opacity="0.12" stroke="#ff7b2e" stroke-opacity="0.6"/>
+  <circle cx="344" cy="263" r="4" fill="#ff7b2e"/>
+  <text x="356" y="268" fill="#f4f4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">contract</text>
+  <rect x="445.2" y="248" width="82" height="30" rx="15" fill="#ffc94d" fill-opacity="0.12" stroke="#ffc94d" stroke-opacity="0.6"/>
+  <circle cx="461.2" cy="263" r="4" fill="#ffc94d"/>
+  <text x="473.2" y="268" fill="#f4f4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">build</text>
+  <rect x="537.2" y="248" width="82" height="30" rx="15" fill="#4fd8c4" fill-opacity="0.12" stroke="#4fd8c4" stroke-opacity="0.6"/>
+  <circle cx="553.2" cy="263" r="4" fill="#4fd8c4"/>
+  <text x="565.2" y="268" fill="#f4f4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">check</text>
+  <rect x="784" y="50" width="444" height="260" rx="20" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="810" y="84" fill="#71717a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2">TOOLS</text>
+  <text x="1202" y="84" text-anchor="end" fill="#71717a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1">npx @pymodel/niblet</text>
+  <path d="M804 98 H1208" stroke="#ffffff" stroke-opacity="0.07"/>
+  <path d="M816 134 V284" stroke="url(#rail)" stroke-width="2" stroke-opacity="0.55"/>
+  <circle cx="816" cy="134" r="9" fill="#ff7b2e" fill-opacity="0.18"/>
+  <circle cx="816" cy="134" r="4.5" fill="#ff7b2e"/>
+  <text x="838" y="138" fill="#ff7b2e" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">SCREENS</text>
+  <rect x="924" y="119" width="166" height="30" rx="15" fill="#ff7b2e" fill-opacity="0.1" stroke="#ff7b2e" stroke-opacity="0.5"/>
+  <text x="1007.1" y="139" text-anchor="middle" fill="#f4f4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">find_ui_references</text>
+  <circle cx="816" cy="184" r="9" fill="#ffc94d" fill-opacity="0.18"/>
+  <circle cx="816" cy="184" r="4.5" fill="#ffc94d"/>
+  <text x="838" y="188" fill="#ffc94d" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">ASSETS</text>
+  <rect x="924" y="169" width="158" height="30" rx="15" fill="#ffc94d" fill-opacity="0.1" stroke="#ffc94d" stroke-opacity="0.5"/>
+  <text x="1003.1" y="189" text-anchor="middle" fill="#f4f4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">find_ui_materials</text>
+  <circle cx="816" cy="234" r="9" fill="#b9e769" fill-opacity="0.18"/>
+  <circle cx="816" cy="234" r="4.5" fill="#b9e769"/>
+  <text x="838" y="238" fill="#b9e769" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">SYSTEM</text>
+  <rect x="924" y="219" width="182" height="30" rx="15" fill="#b9e769" fill-opacity="0.1" stroke="#b9e769" stroke-opacity="0.5"/>
+  <text x="1015.0" y="239" text-anchor="middle" fill="#f4f4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">get_design_reference</text>
+  <circle cx="816" cy="284" r="9" fill="#4fd8c4" fill-opacity="0.18"/>
+  <circle cx="816" cy="284" r="4.5" fill="#4fd8c4"/>
+  <text x="838" y="288" fill="#4fd8c4" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">LOCAL</text>
+  <rect x="924" y="269" width="111" height="30" rx="15" fill="#4fd8c4" fill-opacity="0.1" stroke="#4fd8c4" stroke-opacity="0.5"/>
+  <text x="979.5" y="289" text-anchor="middle" fill="#f4f4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">niblet_help</text>
+  <rect x="1042.9" y="269" width="127" height="30" rx="15" fill="#4fd8c4" fill-opacity="0.1" stroke="#4fd8c4" stroke-opacity="0.5"/>
+  <text x="1106.2" y="289" text-anchor="middle" fill="#f4f4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">niblet_status</text>
+</svg>
