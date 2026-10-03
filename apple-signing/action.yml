@@ -1,0 +1,64 @@
+name: Apple signing
+description: |
+  Import the PyModel Developer ID certificate into a temporary keychain and
+  materialize the App Store Connect API key, for any PyModel macOS app.
+  Exports CODE_SIGN_IDENTITY, and APPLE_API_KEY / APPLE_API_KEY_ID /
+  APPLE_API_ISSUER when a key is given. With no certificate it exports nothing,
+  so the caller's build falls back to its unsigned path.
+
+inputs:
+  certificate-p12:
+    description: Base64 Developer ID Application .p12 (secrets.MAC_CSC_LINK)
+    required: false
+  certificate-password:
+    description: Its password (secrets.MAC_CSC_KEY_PASSWORD)
+    required: false
+  api-key-p8:
+    description: Base64 App Store Connect team API key (secrets.APPLE_API_KEY_P8)
+    required: false
+  api-key-id:
+    description: secrets.APPLE_API_KEY_ID
+    required: false
+  api-issuer:
+    description: secrets.APPLE_API_ISSUER
+    required: false
+
+outputs:
+  identity:
+    description: The signing identity, empty when no certificate was given
+    value: ${{ steps.import.outputs.identity }}
+
+runs:
+  using: composite
+  steps:
+    - id: import
+      shell: bash
+      env:
+        CERT_P12: ${{ inputs.certificate-p12 }}
+        CERT_PASSWORD: ${{ inputs.certificate-password }}
+        API_KEY_P8: ${{ inputs.api-key-p8 }}
+        API_KEY_ID: ${{ inputs.api-key-id }}
+        API_ISSUER: ${{ inputs.api-issuer }}
+      run: |
+        set -euo pipefail
+        if [[ -z "${CERT_P12}" ]]; then echo "No signing certificate given; leaving the build unsigned."; exit 0; fi
+        keychain="${RUNNER_TEMP}/pymodel-signing.keychain-db"
+        printf '%s' "${CERT_P12}" | base64 -d > "${RUNNER_TEMP}/cert.p12"
+        security create-keychain -p actions "${keychain}"
+        security set-keychain-settings -lut 21600 "${keychain}"
+        security unlock-keychain -p actions "${keychain}"
+        # shellcheck disable=SC2046 # one argument per existing keychain
+        security list-keychains -d user -s "${keychain}" $(security list-keychains -d user | tr -d '"')
+        security import "${RUNNER_TEMP}/cert.p12" -k "${keychain}" -P "${CERT_PASSWORD}" -T /usr/bin/codesign
+        security set-key-partition-list -S apple-tool:,apple: -s -k actions "${keychain}" > /dev/null
+        rm -f "${RUNNER_TEMP}/cert.p12"
+        identity="$(security find-identity -v -p codesigning "${keychain}" | sed -n 's/.*"\(Developer ID Application[^"]*\)".*/\1/p' | head -1)"
+        [[ -n "${identity}" ]] || { echo "::error::No Developer ID Application identity in the certificate" >&2; exit 1; }
+        echo "CODE_SIGN_IDENTITY=${identity}" >> "$GITHUB_ENV"
+        echo "identity=${identity}" >> "$GITHUB_OUTPUT"
+        if [[ -n "${API_KEY_P8}" ]]; then
+          [[ -n "${API_KEY_ID}" && -n "${API_ISSUER}" ]] || { echo "::error::api-key-p8 needs api-key-id and api-issuer" >&2; exit 1; }
+          printf '%s' "${API_KEY_P8}" | base64 -d > "${RUNNER_TEMP}/AuthKey.p8"
+          chmod 600 "${RUNNER_TEMP}/AuthKey.p8"
+          { echo "APPLE_API_KEY=${RUNNER_TEMP}/AuthKey.p8"; echo "APPLE_API_KEY_ID=${API_KEY_ID}"; echo "APPLE_API_ISSUER=${API_ISSUER}"; } >> "$GITHUB_ENV"
+        fi
